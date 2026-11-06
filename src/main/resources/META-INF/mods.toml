@@ -1,0 +1,10 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="energyshield"
+version="1.0.0"
+displayName="Energy Shield Mod"
+authors="MaxGarden"
+description="Add Energy Shield Fist item to Minecraft Forge 1.20.1"
