@@ -15,7 +15,7 @@ jobs:
           chmod +x gradlew || true
           ./gradlew build || true
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: EnergyShield-Mod
           path: build/libs/*.jar
