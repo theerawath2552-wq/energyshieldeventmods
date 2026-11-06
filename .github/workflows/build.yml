@@ -10,9 +10,13 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      - name: Setup Gradle Project
-        run: |
-          wget https://github.com/minecraftforge/ForgeGradle/archive/refs/heads/FG_6.0.zip
       - name: Build with Gradle
-        run: ./gradlew build || true
-        
+        run: |
+          chmod +x gradlew || true
+          ./gradlew build || true
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: EnergyShield-Mod
+          path: build/libs/*.jar
+          
