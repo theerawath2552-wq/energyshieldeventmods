@@ -1,4 +1,4 @@
-bname: Build Mod
+name: Build Mod
 on: [push]
 jobs:
   build:
